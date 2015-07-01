@@ -348,6 +348,7 @@ module.exports = function(objects, options) {
       geometry.id = id(geometry);
       if (geometry.id == null) delete geometry.id;
 
+      /*
       if (properties0 = geometry.properties) {
         var properties0, properties1 = {}, key0, key1;
         delete geometry.properties;
@@ -357,6 +358,7 @@ module.exports = function(objects, options) {
           }
         }
       }
+      */
 
       if (geometry.arcs) delete geometry.coordinates;
       return geometry;
